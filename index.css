@@ -1,0 +1,178 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/* GENERAL STYLES */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    max-width: 660px;
+    margin: auto;
+}
+
+main {
+    margin: 80px 0;
+}
+
+/* CONTENT */
+.heading {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+
+.heading span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+.subheading {
+    color: hsl(209, 33%, 12%);
+}
+
+/* SUBSCRIBE FORM */
+#subscribe-form {
+    margin: 20px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+#input-field {
+    border: 1px solid hsl(223, 100%, 88%);
+    padding: 16px 40px;
+}
+
+#input-field:focus {
+    outline: 1px solid hsl(223, 87%, 63%);
+}
+
+::placeholder {
+    color: hsl(223, 100%, 88%);
+    font-family: inherit;
+    /* Firefox */
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: hsl(223, 100%, 88%);
+}
+
+#input-field,
+.notify-btn {
+    border-radius: 40px;
+}
+
+.notify-btn {
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px hsl(223, 100%, 88%);
+    width: 100%;
+    padding: 16px 60px;
+}
+
+.notify-btn:hover {
+    opacity: 0.9;
+}
+
+/* FORM VALIDATION ERROR */
+.error-border {
+    outline: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* MAIN IMAGE */
+#illustration-dashboard {
+    width: 90%;
+    margin: 20px 0;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.social-bar {
+    font-size: 25px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-bar a {
+    color: hsl(223, 87%, 63%);
+}
+
+.social-bar a:hover {
+    color: blue;
+}
+
+.copyright {
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+/* ATTRIBUTION */
+.attribution {
+    border-top: 1px solid lightgray;
+    padding: 8px 0;
+    margin-bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.attribution a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* RESPONSIVE LAYOUT */
+@media only screen and (max-width: 550px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    #subscribe-form {
+        flex-direction: column;
+    }
+
+    .error-message {
+        text-align: center;
+        padding: 0;
+    }
+}
